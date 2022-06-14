@@ -16,7 +16,7 @@ const api = {
 };
 
 function getResults( cityName ) {
-    fetch( `${api.url}${cityName}&appid=${api.key}&units=metric` )
+    fetch( `${api.url}${cityName}&appid=${api.key}&units=metric`)
     .then( result => {
         if (result.ok) {
             return result.json();
@@ -58,7 +58,6 @@ function formatDate() {
 
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
 
     return `${days[day]} ${date} ${months[month]} ${year}`;
 }
