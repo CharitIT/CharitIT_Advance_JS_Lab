@@ -44,12 +44,11 @@ input {
     font-size: 5em;
     font-weight: bolder;
     text-shadow: 2px 5px rgba(0, 0, 0, 0.6);
-
     margin-top: 50px;  
 }
 
 #weather {
     font-size: 1.8em;
-    font-style: italic;
+    font-style: inherit;
     margin-top: 40px;
 }
